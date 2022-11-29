@@ -44,7 +44,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 9));
+    transform: translateX(calc(-250px * 20));
   }
 }
 /*traslucido*/
