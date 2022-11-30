@@ -89,7 +89,7 @@
           <ul class="list-reset lg:flex justify-end flex-1 items-center">
             <li class="mr-3">
               <a
-                class="inline-block py-2 px-4 text-black font-bold no-underline"
+                class="inline-block py-2 px-4 text-black no-underline"
                 href="#eventos"
                 >Eventos</a
               >
@@ -104,8 +104,15 @@
             <li class="mr-3">
               <a
                 class="inline-block text-black no-underline hover:text-gray-400 hover:text-underline py-2 px-4"
-                href="#"
-                >link</a
+                href="#patrocinadores"
+                >Patrocinadores</a
+              >
+            </li>
+            <li class="mr-3">
+              <a
+                class="inline-block text-black no-underline hover:text-gray-400 hover:text-underline py-2 px-4"
+                href="#contacto"
+                >Contacto</a
               >
             </li>
           </ul>
@@ -123,26 +130,32 @@
           class="flex flex-col w-full md:w-2/5 justify-center text-center items-center md:text-center"
         >
           <p
-            class="uppercase tracking-loose w-full sm:text-5xl text-2xl font-bold font-TrashHand"
+            class="uppercase tracking-loose w-full sm:text-5xl text-5xl font-bold font-TrashHand"
           >
-            Asociación Cultural en San Miguel del Pino
+            Asociación Cultural en <br />
+            San Miguel del Pino
           </p>
           <div class="flex flex-row p-4">
-            <img
-              src="./assets/images/icons8-instagram-94.png"
-              alt=""
-              class="h-8"
-            />
-            <img
-              src="./assets/images/icons8-youtube-94.png"
-              alt=""
-              class="h-8 ml-4"
-            />
-            <img
-              src="./assets/images/icons8-facebook-48.png"
-              alt=""
-              class="h-8 ml-4"
-            />
+            <a href="https://www.instagram.com/vacceorock/" target="_blank"
+              ><img
+                src="./assets/images/icons8-instagram-94.png"
+                alt=""
+                class="h-8"
+            /></a>
+            <a
+              href="https://www.youtube.com/watch?v=VpeCbZ4oqZU&ab_channel=VacceoRock"
+              target="_blank"
+              ><img
+                src="./assets/images/icons8-youtube-94.png"
+                alt=""
+                class="h-8 ml-4"
+            /></a>
+            <a href="https://www.facebook.com/vacceorock" target="_blank"
+              ><img
+                src="./assets/images/icons8-facebook-48.png"
+                alt=""
+                class="h-8 ml-4"
+            /></a>
           </div>
         </div>
         <!--Right Col-->
@@ -241,7 +254,9 @@
           </div>
           <div class="w-full sm:w-1/2 p-2 mt-6">
             <div class="align-middle">
-              <h3 class="text-3xl text-gray-400 font-bold leading-none mb-3">
+              <h3
+                class="text-3xl text-gray-400 font-bold leading-none mb-3 font-TrashHand"
+              >
                 Jam Sessions
               </h3>
               <p class="text-gray-600 mb-2">
@@ -257,7 +272,9 @@
         <hr />
         <div class="flex flex-wrap text-center justify-center">
           <div class="w-5/6 sm:w-1/2 p-2 mt-2">
-            <h3 class="text-3xl text-gray-400 font-bold leading-none mb-3">
+            <h3
+              class="text-3xl text-gray-400 font-bold leading-none mb-3 font-TrashHand"
+            >
               Concurso bandas 2023
             </h3>
             <p class="text-gray-600 mb-2"></p>
@@ -298,7 +315,7 @@
     <section class="bg-white border-b py-8 bg-black" id="festival2022">
       <div class="container mx-auto flex flex-wrap pt-4 pb-12">
         <h2
-          class="w-full my-2 text-5xl font-bold leading-tight text-center text-amarillo_vacceo"
+          class="w-full my-2 text-5xl font-bold leading-tight text-center text-amarillo_vacceo font-TrashHand"
         >
           Festival 2022
         </h2>
@@ -486,12 +503,12 @@
         class="container mx-auto px-2 pt-4 pb-12 text-gray-400 bg-[url('./assets/images/fondo_4.jpg')] bg-fixed bg-cover"
       >
         <h2
-          class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-700"
+          class="my-2 text-5xl font-bold text-center text-amarillo_vacceo bg-gradient-to-b from-black to-gray-90 font-TrashHand"
         >
           Patrocinios Asociación
         </h2>
         <h3
-          class="w-full my-2 text-2xl leading-tight text-center text-gray-500"
+          class="w-full my-2 font-bold text-2xl leading-tight text-center text-amarillo_vacceo bg-gradient-to-t from-black to-gray-90"
         >
           Consulta las ventajas
         </h3>
@@ -625,9 +642,12 @@
         </g>
       </g>
     </svg>
-    <section class="container mx-auto text-center py-6 mb-12">
+    <section
+      class="container mx-auto text-center py-6 mb-12"
+      id="patrocinadores"
+    >
       <h2
-        class="w-full my-2 text-5xl font-bold leading-tight text-center text-white"
+        class="w-full my-2 text-5xl font-bold leading-tight text-center font-TrashHand"
       >
         Patrocinadores 2022
       </h2>
@@ -830,6 +850,14 @@
           </div>
         </div>
       </div>
+    </section>
+    <hr />
+    <section class="container mx-auto text-center py-6 mb-12" id="contacto">
+      <h2
+        class="w-full my-2 text-5xl font-bold leading-tight text-center text-white font-TrashHand"
+      >
+        Contacto
+      </h2>
     </section>
 
     <!-- jQuery if you need it
