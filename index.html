@@ -873,13 +873,17 @@
                 "
               >
                 <h2 class="text-3xl font-bold mb-12">Contáctanos</h2>
-                <form action="contact-form-process.php" method="GET">
+                <form
+                  action="https://formsubmit.co/vacceorock@gmail.com"
+                  method="POST"
+                >
                   <div class="form-group mb-6">
                     <input
                       type="text"
                       class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                       id="Name"
                       placeholder="Nombre"
+                      name="name"
                     />
                   </div>
                   <div class="form-group mb-6">
@@ -888,6 +892,7 @@
                       class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                       id="Email"
                       placeholder="Email"
+                      name="email"
                     />
                   </div>
                   <div class="form-group mb-6">
@@ -896,6 +901,7 @@
                       id="Message"
                       rows="3"
                       placeholder="Mensaje"
+                      name="message"
                     ></textarea>
                   </div>
 
