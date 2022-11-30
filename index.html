@@ -21,6 +21,7 @@
             Bahnschrift: ['"Bahnschrift Light"', "sans-serif"],
             TrashHand: ['"TrashHand"', "sans-serif"],
           },
+          plugins: [require("tailwindcss"), require("autoprefixer")],
         },
       };
     </script>
@@ -328,6 +329,11 @@
         </div>
         <div
           class="w-full md:w-2/4 p-6 flex flex-col flex-grow flex-shrink bg-[url('./assets/images/fondo_3.jpg')] bg-fixed bg-cover"
+          style="
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+          "
         >
           <div class="flex-1 rounded-t rounded-b-none overflow-hidden shadow">
             <a href="#" class="flex flex-wrap no-underline hover:no-underline">
