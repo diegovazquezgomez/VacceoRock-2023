@@ -19,12 +19,14 @@
           },
           fontFamily: {
             Bahnschrift: ['"Bahnschrift Light"', "sans-serif"],
+            TrashHand: ['"TrashHand"', "sans-serif"],
           },
         },
       };
     </script>
     <style>
       @import url("./fonts/BAHNSCHRIFT.TTF");
+      @import url("./fonts/TrashHand.TTF");
     </style>
     <link
       rel="icon"
@@ -44,9 +46,7 @@
       }
     </style>
   </head>
-  <body
-    class="leading-normal tracking-normal text-white gradient font-Bahnschrift"
-  >
+  <body class="leading-normal tracking-normal text-white gradient">
     <!--Nav-->
     <nav id="header" class="fixed w-full z-30 top-0 text-white mb-10">
       <div
@@ -54,7 +54,7 @@
       >
         <div class="pl-4 flex items-center">
           <a
-            class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl vacceo"
+            class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl font-Bahnschrift"
             href="#"
           >
             <img
@@ -121,7 +121,7 @@
           class="flex flex-col w-full md:w-2/5 justify-center text-center items-center md:text-center"
         >
           <p
-            class="uppercase tracking-loose w-full sm:text-5xl text-2xl font-bold"
+            class="uppercase tracking-loose w-full sm:text-5xl text-2xl font-bold font-TrashHand"
           >
             Asociación Cultural en San Miguel del Pino
           </p>
@@ -194,7 +194,7 @@
     <section class="bg-white border-b py-8 bg-black">
       <div class="container max-w-5xl mx-auto m-8" id="eventos">
         <h2
-          class="w-full my-2 text-5xl font-bold leading-tight text-center text-amarillo_vacceo"
+          class="w-full my-2 text-5xl font-bold leading-tight text-center text-amarillo_vacceo font-TrashHand"
         >
           Eventos
         </h2>
@@ -206,7 +206,7 @@
         <div class="flex flex-wrap text-center justify-center">
           <div class="w-5/6 sm:w-1/2 p-2">
             <h3
-              class="text-3xl text-gray-400 font-bold leading-none mb-3 text-amarillo_vacceo"
+              class="text-3xl text-gray-400 font-bold leading-none mb-3 text-amarillo_vacceo font-TrashHand"
             >
               Festival 2023
             </h3>
@@ -258,10 +258,32 @@
             <p class="text-gray-600 mb-2"></p>
 
             <p class="text-gray-600 mt-2">
-              <span class="text-xl font-bold"></span> Pendiente de confirmación.
-              Estad Atentos a las rrss los próximos días!
+              <span class="text-xl font-bold">FASE 1</span> ENVÍO DE MAQUETA O
+              EP(mínimo 3 canciones) A:
+              <a href="mailto:concursobandasvr2023@gmail.com" target="_blank"
+                >concursobandasvr2023@gmail.com</a
+              >
+            </p>
+            <p class="text-gray-600 mt-2">
+              <span class="text-xl font-bold">FASE 2</span> VOTACIÓN POPULAR EN
+              REDES SOCIALES ENTRE LOS FINALISTAS DE LA FASE 1
+            </p>
+            <p class="text-gray-600 mt-2">
+              <span class="text-xl font-bold">FASE 3</span> FASE FINAL. LOS
+              FINALISTAS DE LA FASE 2 TOCARÁN EN DIRECTO Y EL GANADORSE DECIDIRÁ
+              ENTRE LA VOTACIÓN DEL PÚBLICO ASISTENTE Y UN JURADO COMPUESTO POR
+              MÚSICOS Y ESPECIALISTAS MUSICALES DE PRIMER NIVEL
+            </p>
+            <p class="text-gray-600 mt-2">
+              <a href="./assets/Concurso_de_bandas_2023.pdf" target="_blank"
+                ><span
+                  class="bg-yellow-500 text-xl font-semibold mr-2 px-2.5 py-0.5 rounded"
+                  >BASES COMPLETAS</span
+                ></a
+              >
             </p>
           </div>
+
           <div class="w-full sm:w-1/2 p-2">
             <img src="./assets/images/grupos/banner_ondeando.gif" alt="" />
           </div>
@@ -786,7 +808,7 @@
             </div>
             <div class="slide">
               <img
-                src="./assets/images/patrocinios2022/semillasblanco.jpg"
+                src="./assets/images/patrocinios2022/semillasblanco.jpeg"
                 alt=""
                 class="patrocinios2022 mr-1"
                 style="height: 120px; width: 230px"
