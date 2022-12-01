@@ -7,15 +7,6 @@
   width: 90%;
 }
 
-/*.slider::before, .slider::after {
-    background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
-    content: "";
-    height: 100%;
-    position: absolute;
-    width: 100px;
-    z-index: 2;
-  }*/
-
 .slider::after {
   right: 0;
   top: 0;
@@ -65,18 +56,4 @@ li {
   max-height: 120px;
   width: auto;
   height: auto;
-}
-
-.fondo_1 {
-  @supports (-webkit-touch-callout: none) {
-    .selector {
-      background-attachment: scroll;
-    }
-  }
-
-  @supports not (-webkit-touch-callout: none) {
-    .selector {
-      background-attachment: fixed;
-    }
-  }
 }

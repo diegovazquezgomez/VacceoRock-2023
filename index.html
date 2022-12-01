@@ -5,10 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>VACCEO ROCK</title>
-    <meta name="description" content="VACCEO ROCK" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
+    <meta
+      name="description"
+      content="FESTIVAL VACCEO ROCK SAN MIGUEL DEL PINO VALLADOLID"
+    />
+    <meta
+      name="keywords"
+      content="FESTIVAL VACCEO ROCK SAN MIGUEL DEL PINO VALLADOLID"
+    />
+    <meta name="author" content="Diego Vazquez" />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("./fonts/Bahnschrift.TTF");
+      @import url("./fonts/TrashHand.TTF");
+    </style>
+
     <script>
       tailwind.config = {
         theme: {
@@ -18,24 +30,26 @@
             },
           },
           fontFamily: {
-            Bahnschrift: ['"Bahnschrift Light"', "sans-serif"],
-            TrashHand: ['"TrashHand"', "sans-serif"],
+            bahnschrift: ['"Bahnschrift Light"', "sans-serif"],
+            trashHand: ['"TrashHand"', "sans-serif"],
           },
-          plugins: [require("tailwindcss"), require("autoprefixer")],
+          plugins: [
+            require("tailwindcss"),
+            require("autoprefixer"),
+            require("@tailwindcss/typography"),
+            require("@tailwindcss/forms"),
+            require("@tailwindcss/aspect-ratio"),
+          ],
         },
       };
     </script>
-    <style>
-      @import url("./fonts/BAHNSCHRIFT.TTF");
-      @import url("./fonts/TrashHand.TTF");
-    </style>
+
     <link
       rel="icon"
       href="./assets/images/logo-ok.ico"
       type="image/icon type"
     />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <!--Replace with your tailwind.css once created-->
+
     <link
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
       rel="stylesheet"
@@ -48,16 +62,16 @@
     </style>
   </head>
   <body
-    class="leading-normal tracking-normal text-white gradient font-Bahnschrift"
+    class="leading-normal tracking-normal text-white gradient font-bahnschrift"
   >
     <!--Nav-->
-    <nav id="header" class="fixed w-full z-30 top-0 text-white mb-10">
+    <nav id="header" class="fixed w-full z-30 top-0 mb-10">
       <div
         class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
       >
         <div class="pl-4 flex items-center">
           <a
-            class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl font-Bahnschrift"
+            class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl font-bahnschrift"
             href="#"
           >
             <img
@@ -84,36 +98,36 @@
           </button>
         </div>
         <div
-          class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+          class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-transparent lg:bg-transparent text-black p-4 lg:p-0 z-20"
           id="nav-content"
         >
           <ul
-            class="list-reset lg:flex justify-end flex-1 items-center text-white"
+            class="list-reset lg:flex justify-end flex-1 items-center text-gray-400"
           >
             <li class="mr-3">
               <a
-                class="inline-block py-2 px-4 text-white no-underline"
+                class="inline-block py-2 px-4 no-underline hover:text-gray-200"
                 href="#eventos"
                 >Eventos</a
               >
             </li>
             <li class="mr-3">
               <a
-                class="inline-block text-white no-underline hover:text-gray-400 hover:text-underline py-2 px-4"
+                class="inline-block no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
                 href="#festival2022"
                 >Festival 2022</a
               >
             </li>
             <li class="mr-3">
               <a
-                class="inline-block text-white no-underline hover:text-gray-400 hover:text-underline py-2 px-4"
+                class="inline-block no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
                 href="#patrocinadores"
                 >Patrocinadores</a
               >
             </li>
             <li class="mr-3">
               <a
-                class="inline-block text-white no-underline hover:text-gray-400 hover:text-underline py-2 px-4"
+                class="inline-block no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
                 href="#contacto"
                 >Contacto</a
               >
@@ -133,7 +147,7 @@
           class="flex flex-col w-full md:w-2/5 justify-center text-center items-center md:text-center"
         >
           <p
-            class="uppercase tracking-loose w-full sm:text-5xl text-5xl font-bold font-TrashHand"
+            class="uppercase tracking-loose w-full sm:text-5xl text-5xl font-bold font-trashHand"
           >
             Asociación Cultural en <br />
             San Miguel del Pino
@@ -212,7 +226,7 @@
     <section class="bg-white border-b py-8 bg-black">
       <div class="container max-w-5xl mx-auto m-8" id="eventos">
         <h2
-          class="w-full my-2 text-5xl font-bold leading-tight text-center text-amarillo_vacceo font-TrashHand"
+          class="w-full my-2 text-5xl font-bold leading-tight text-center text-amarillo_vacceo font-trashHand"
         >
           Eventos
         </h2>
@@ -224,7 +238,7 @@
         <div class="flex flex-wrap text-center justify-center">
           <div class="w-5/6 sm:w-1/2 p-2">
             <h3
-              class="text-3xl text-gray-400 font-bold leading-none mb-3 text-amarillo_vacceo font-TrashHand"
+              class="text-3xl font-bold leading-none mb-3 text-amarillo_vacceo font-trashHand"
             >
               Festival 2023
             </h3>
@@ -258,7 +272,7 @@
           <div class="w-full sm:w-1/2 p-2 mt-6">
             <div class="align-middle">
               <h3
-                class="text-3xl text-gray-400 font-bold leading-none mb-3 font-TrashHand"
+                class="text-3xl text-gray-400 font-bold leading-none mb-3 font-trashHand"
               >
                 Jam Sessions
               </h3>
@@ -276,7 +290,7 @@
         <div class="flex flex-wrap text-center justify-center">
           <div class="w-5/6 sm:w-1/2 p-2 mt-2">
             <h3
-              class="text-3xl text-gray-400 font-bold leading-none mb-3 font-TrashHand"
+              class="text-3xl text-gray-400 font-bold leading-none mb-3 font-trashHand"
             >
               Concurso bandas 2023
             </h3>
@@ -318,7 +332,7 @@
     <section class="bg-white border-b py-8 bg-black" id="festival2022">
       <div class="container mx-auto flex flex-wrap pt-4 pb-12">
         <h2
-          class="w-full my-2 text-5xl font-bold leading-tight text-center text-amarillo_vacceo font-TrashHand"
+          class="w-full my-2 text-5xl font-bold leading-tight text-center text-amarillo_vacceo font-trashHand"
         >
           Festival 2022
         </h2>
@@ -343,10 +357,14 @@
                 class="w-full justify-center mt-2"
               />
               <p
-                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2"
+                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 bg-gray-800/50 p-2"
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                at ipsum eu nunc commodo posuere et sit amet ligula.
+                HARDCORE METAL DESDE VALLADOLID . DESDE SUS ORÍGENES EN 2016 ,
+                BLAZE THE TRAIL HA SIDO UNA BANDA COMPROMETIDA AL MÁXIMO CON LA
+                DIFUSIÓN DE LOS VALORES HARDCORE EN DIRECTO, LANZÁNDOSE DESDE EL
+                MINUTO 1 A COMPARTIR ESCENARIO CON BANDAS IMPORTANTES DEL
+                PANORAMA ESTATAL COMO CRISIX, AGAINST THE WAVES, DAWN OF THE
+                MAYA O RIOT PROPAGANDA, ENTRE OTROS.
               </p>
             </a>
           </div>
@@ -357,7 +375,7 @@
           <div class="flex-1 rounded-t rounded-b-none overflow-hidden shadow">
             <a href="#" class="flex flex-wrap no-underline hover:no-underline">
               <p
-                class="w-full text-white text-2xl md:text-4xl px-6 text-center font-bold"
+                class="w-full text-white text-2xl md:text-4xl px-6 text-center font-bold uppercase"
               >
                 MANDRÁGORA NEGRA
               </p>
@@ -367,10 +385,15 @@
                 class="w-full justify-center mt-2"
               />
               <p
-                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2"
+                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 uppercase bg-gray-800/50 p-2"
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                at ipsum eu nunc commodo posuere et sit amet ligula.
+                MANDRAGORA NEGRA se encuentra inmersa ya en la promoción de su
+                nuevo álbum “SIMBOLO DE LIBERTAD “, editado a través del sello
+                HEAVEN MUSIK. Trabajo con el que están muy ilusionados ya que ha
+                supuesto un enorme esfuerzo poder realizarlo. Desde la agencia
+                de Promoción & Management HEAVEN MUSIK, preparan una gira que
+                les llevara a recorrer diversas ciudades de la península en la
+                cual presentaran su nuevo trabajo discográfico.
               </p>
             </a>
           </div>
@@ -392,10 +415,16 @@
                 class=""
               />
               <p
-                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2"
+                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 uppercase bg-gray-800/50 p-2"
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                at ipsum eu nunc commodo posuere et sit amet ligula.
+                Hijos del Tercer Acorde (HiD3A) es una banda de folk-rock con
+                temas propios en castellano que nació en Valladolid en el año
+                2015. Sus temas hibridan el sabor del rock&roll con las melodías
+                y los instrumentos de la música tradicional irlandesa,
+                castellana, galaica y americana; ello, unido a una puesta en
+                escena ficcionada e inspirada en la ciencia ficción steampunk,
+                convierten a esta tripulación de balas perdidas en una apuesta
+                segura.
               </p>
             </a>
           </div>
@@ -412,10 +441,14 @@
               </p>
               <img src="./assets/images/grupos/paraiso.jpg" alt="" />
               <p
-                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2"
+                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 uppercase bg-gray-800/50 p-2"
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                at ipsum eu nunc commodo posuere et sit amet ligula.
+                Banda de Heavy Metal/Hard Rock nacida en Valladolid en el año
+                2012, con la idea principal de “Suko Sánchez” y “David Vita”. Su
+                sonido, está claramente influenciado por una mezcla de grupos
+                internacionales, como puedan ser “Dee Snider, Accept o Skid Row”
+                y sobre todo nacionales, como “Ángeles del Infierno, Saratoga o
+                Dunedain”.
               </p>
             </a>
           </div>
@@ -432,10 +465,14 @@
               </p>
               <img src="./assets/images/grupos/wakeUp.jpg" alt="" />
               <p
-                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2"
+                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 uppercase bg-gray-800/50 p-2"
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                at ipsum eu nunc commodo posuere et sit amet ligula.
+                Wake Up Your Hopes es una banda de metalcore vallisoletana que
+                nace de la ilusión de 4 chicos en el año 2016. Tras varios
+                cambios en su formación, numerosos conciertos, videoclips, un
+                E.P. y un parón que ha durado más de lo deseado, actualmente la
+                banda se propone volver al escenario y sacar a la luz nuevas
+                canciones.
               </p>
             </a>
           </div>
@@ -452,10 +489,15 @@
               </p>
               <img src="./assets/images/grupos/osos.jpg" alt="" />
               <p
-                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2"
+                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 uppercase bg-gray-800/50 p-2"
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                at ipsum eu nunc commodo posuere et sit amet ligula.
+                Los Osos de Velilla es una banda creada en el año 2015, en el
+                Oeste de Zamora, más concretamente en Muelas de los Caballeros,
+                para el divertimento del público y de los propios Osos. Tenemos
+                temas propios y otras adaptaciones de temas robados y tuneados
+                impúnemente, de forma que podamos hacerles nuestros, con letras
+                sobre la zona de Sanabria-Carballeda que adaptamos sin ningún
+                dolor a cualquier otro lugar que requiera nuestra presencia.
               </p>
             </a>
           </div>
@@ -472,10 +514,16 @@
               </p>
               <img src="./assets/images/grupos/atairaos.jpg" alt="" />
               <p
-                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2"
+                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 uppercase bg-gray-800/50 p-2"
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                at ipsum eu nunc commodo posuere et sit amet ligula.
+                ATAIRAOS (atravesados o en diagonal, en el habla de la Sierra de
+                Francia de Salamanca) es una experiencia única en la música de
+                raíz en España: el diálogo de tú a tú entre la tradición más
+                pura y su reelaboración contemporánea. El trabajo de Atairaos se
+                centra en la música instrumental de la gaita charra y el
+                tamboril de Salamanca, de la mano del maestro Agustín García (El
+                Cabaco, 1963), un archivo viviente de melodías y estilos
+                aprendidos de muchos tamborileros que le precedieron.
               </p>
             </a>
           </div>
@@ -492,10 +540,17 @@
               </p>
               <img src="./assets/images/grupos/HijosdeOveron.jpg" alt="" />
               <p
-                class="w-full text-white font-bold text-md px-6 text-center justify-center mt-2"
+                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 uppercase bg-gray-800/50 p-2"
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                at ipsum eu nunc commodo posuere et sit amet ligula.
+                Hijos de Overón se forma en 2007 de la mano de Raúl y Joni, y se
+                unen al proyecto Rubén Cuellar (el mono) y Daniel Pérez. En 2008
+                debutan en la sala Joaquín Sabina de Móstoles (Madrid) y
+                empiezan a dar conciertos por la zona de Valladolid y Segovia.
+                Deciden incluir en la formación a Miguel Fraile como segundo
+                guitarra. A finales de 2010 se marcha Miguel. En 2014 graban su
+                primer disco “Prisionero De Agujas” que sale a la luz en marzo
+                de 2014, luego vendrían "Camino de piedras" y Salvaje. En la
+                actualidad están preparando nuevo disco.
               </p>
             </a>
           </div>
@@ -504,15 +559,15 @@
     </section>
     <section class="bg-black py-8 bg-black">
       <div
-        class="container mx-auto px-2 pt-4 pb-12 text-gray-400 bg-[url('./assets/images/fondo_4.jpg')] bg-fixed bg-cover"
+        class="container mx-auto px-2 pt-4 pb-12 bg-[url('./assets/images/fondo_4.jpg')] bg-fixed bg-cover"
       >
         <h2
-          class="my-2 text-5xl font-bold text-center text-amarillo_vacceo bg-gradient-to-b from-black to-gray-90 font-TrashHand"
+          class="my-2 text-5xl font-bold text-center text-amarillo_vacceo bg-gray-800/70"
         >
           Patrocinios Asociación
         </h2>
         <h3
-          class="w-full my-2 font-bold text-2xl leading-tight text-center text-amarillo_vacceo bg-gradient-to-t from-black to-gray-90"
+          class="w-full my-2 font-bold text-2xl leading-tight text-center text-amarillo_vacceo bg-gray-800/70"
         >
           Consulta las ventajas
         </h3>
@@ -531,10 +586,18 @@
               class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow"
             >
               <div class="p-8 text-3xl text-center border-b-4">Bronce</div>
-              <ul class="w-full text-center text-sm">
-                <li class="border-b py-4">Cosas</li>
-                <li class="border-b py-4">Cosas</li>
-                <li class="border-b py-4">Cosas</li>
+              <ul class="w-full text-center text-sm p-2">
+                <li class="border-b py-4">
+                  Logotipo en la web y en el cartel del festival en la zona de
+                  patrocinadores básicos.
+                </li>
+                <li class="border-b py-4">
+                  Mención en las redes sociales y en las notas de prensa.
+                </li>
+                <li class="border-b py-4">
+                  Mención en el vídeo resumen del festival
+                </li>
+                <li class="border-b py-4">Camiseta de Vacceo Rock</li>
               </ul>
             </div>
             <div
@@ -544,7 +607,9 @@
                 <button
                   class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
                 >
-                  Contacta con nosotros
+                  <a href="mailto:vacceorock@gmail.com"
+                    >Contacta con nosotros</a
+                  >
                 </button>
               </div>
             </div>
@@ -558,14 +623,27 @@
               <div
                 class="w-full p-8 text-3xl font-bold text-center text-gray-700"
               >
-                Oro (o lo que querais poner)
+                Oro
               </div>
               <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
-              <ul class="w-full text-center text-base font-bold">
-                <li class="border-b py-4">Cosas</li>
-                <li class="border-b py-4">Cosas</li>
-                <li class="border-b py-4">Cosas</li>
-                <li class="border-b py-4">Cosas</li>
+              <ul
+                class="w-full text-center text-base font-bold text-gray-600 p-2"
+              >
+                <li class="border-b py-4">
+                  Logotipo en la web y en el cartel del festival en la zona de
+                  patrocinadores estándar.
+                </li>
+                <li class="border-b py-4">
+                  Mención en las redes sociales y en las notas de prensa.
+                </li>
+                <li class="border-b py-4">
+                  Logotipo en el vídeo resumen del festival
+                </li>
+                <li class="border-b py-4">4 camisetas de Vacceo Rock</li>
+                <li class="border-b py-4">Logotipo en el Photocall</li>
+                <li class="border-b py-4">
+                  Logotipo en los vasos reutilizables del festival.
+                </li>
               </ul>
             </div>
             <div
@@ -575,9 +653,15 @@
                 <button
                   class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
                 >
-                  Contacta con nosotros
+                  <a href="mailto:vacceorock@gmail.com"
+                    >Contacta con nosotros</a
+                  >
                 </button>
               </div>
+              <p class="text-gray-600 text-center justify-center">
+                Si quieres saber más sobre el programa de patrocinadores, no
+                dudes en ponerte en contacto con nosotros
+              </p>
             </div>
           </div>
           <div
@@ -586,13 +670,20 @@
             <div
               class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow"
             >
-              <div class="p-8 text-3xl text-center border-b-4">
-                Plata (o lo que querais poner)
-              </div>
-              <ul class="w-full text-center text-sm">
-                <li class="border-b py-4">Cosas</li>
-                <li class="border-b py-4">Cosas</li>
-                <li class="border-b py-4">Cosas</li>
+              <div class="p-8 text-3xl text-center border-b-4">Plata</div>
+              <ul class="w-full text-center text-sm p-2">
+                <li class="border-b py-4">
+                  Logotipo en la web y en el cartel del festival en la zona de
+                  patrocinadores estándar.
+                </li>
+                <li class="border-b py-4">
+                  Mención en las redes sociales y en las notas de prensa.
+                </li>
+                <li class="border-b py-4">
+                  Logotipo en el vídeo resumen del festival
+                </li>
+                <li class="border-b py-4">2 camisetas de Vacceo Rock</li>
+                <li class="border-b py-4">Logotipo en el Photocall</li>
               </ul>
             </div>
             <div
@@ -602,7 +693,9 @@
                 <button
                   class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
                 >
-                  Contacta con nosotros
+                  <a href="mailto:vacceorock@gmail.com"
+                    >Contacta con nosotros</a
+                  >
                 </button>
               </div>
             </div>
@@ -651,7 +744,7 @@
       id="patrocinadores"
     >
       <h2
-        class="w-full my-2 text-5xl font-bold leading-tight text-center font-TrashHand"
+        class="w-full my-2 text-5xl font-bold leading-tight text-center font-trashHand"
       >
         Patrocinadores 2022
       </h2>
@@ -858,7 +951,7 @@
     <hr />
     <section class="container mx-auto text-center py-6 mb-12" id="contacto">
       <h2
-        class="w-full my-2 text-5xl font-bold leading-tight text-center text-white font-TrashHand"
+        class="w-full my-2 text-5xl font-bold leading-tight text-center text-white font-trashHand"
       >
         Contacto
       </h2>
@@ -915,8 +1008,10 @@
                 </form>
               </div>
             </div>
-            <div class="block rounded-lg shadow-lg px-6 py-12 md:px-12 pr-4">
-              <div class="map-container shadow-lg rounded-lg">
+            <div
+              class="flex flex-row block rounded-lg text-center justify-center"
+            >
+              <div class="map-container rounded-lg">
                 <iframe
                   width="100%"
                   height="600"
@@ -984,9 +1079,6 @@
       });
     </script>
     <script>
-      /*Toggle dropdown list*/
-      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
-
       var navMenuDiv = document.getElementById("nav-content");
       var navMenu = document.getElementById("nav-toggle");
 
