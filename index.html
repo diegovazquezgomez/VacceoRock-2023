@@ -20,7 +20,10 @@
       @import url("./fonts/Bahnschrift.TTF");
       @import url("./fonts/TrashHand.TTF");
     </style>
-
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <script>
       tailwind.config = {
         theme: {
@@ -109,28 +112,28 @@
           >
             <li class="mr-3">
               <a
-                class="inline-block py-2 px-4 no-underline hover:text-gray-200"
+                class="inline-block py-2 px-4 no-underline hover:text-[#daae51]"
                 href="#eventos"
                 >Eventos</a
               >
             </li>
             <li class="mr-3">
               <a
-                class="inline-block no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                class="inline-block no-underline hover:text-[#daae51] hover:text-underline py-2 px-4"
                 href="#festival2022"
                 >Festival 2022</a
               >
             </li>
             <li class="mr-3">
               <a
-                class="inline-block no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                class="inline-block no-underline hover:text-[#daae51] hover:text-underline py-2 px-4"
                 href="#patrocinadores"
                 >Patrocinadores</a
               >
             </li>
             <li class="mr-3">
               <a
-                class="inline-block no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                class="inline-block no-underline hover:text-[#daae51] hover:text-underline py-2 px-4"
                 href="#contacto"
                 >Contacto</a
               >
@@ -281,8 +284,10 @@
                 Jam Sessions
               </h3>
               <p class="text-gray-600 mb-2">
-                Cada primer viernes de mes, desde el 4 de noviembre, hacemos una
-                Jam Session con la colaboracion del bar "El Molino".
+                <span style="color: #daae51" class="font-bold"
+                  >Cada primer viernes de mes</span
+                >, desde el 4 de noviembre, hacemos una Jam Session con la
+                colaboracion del bar "El Molino".
               </p>
               <p class="text-gray-400 mb-2 text-xl font-bold">
                 Ven a tocar o escuchar música en directo!
@@ -301,21 +306,36 @@
             <p class="text-gray-600 mb-2"></p>
 
             <p class="text-gray-600 mt-2">
-              <span class="text-xl font-bold">FASE 1</span> ENVÍO DE MAQUETA O
-              EP(mínimo 3 canciones) A:
-              <a href="mailto:concursobandasvr2023@gmail.com" target="_blank"
+              <span class="text-xl font-bold">FASE 1: </span>
+              <span style="color: #daae51" class="font-bold"
+                >ENVÍO DE MAQUETA</span
+              >
+              O EP(mínimo 3 canciones) A:
+              <br />
+              <a
+                href="mailto:concursobandasvr2023@gmail.com"
+                target="_blank"
+                class="text-white sm:text-2xl"
                 >concursobandasvr2023@gmail.com</a
               >
             </p>
             <p class="text-gray-600 mt-2">
-              <span class="text-xl font-bold">FASE 2</span> VOTACIÓN POPULAR EN
-              REDES SOCIALES ENTRE LOS FINALISTAS DE LA FASE 1
+              <span class="text-xl font-bold">FASE 2:</span>
+              <span style="color: #daae51" class="font-bold"
+                >VOTACIÓN POPULAR</span
+              >
+              EN REDES SOCIALES ENTRE LOS FINALISTAS DE LA FASE 1
             </p>
             <p class="text-gray-600 mt-2">
-              <span class="text-xl font-bold">FASE 3</span> FASE FINAL. LOS
-              FINALISTAS DE LA FASE 2 TOCARÁN EN DIRECTO Y EL GANADORSE DECIDIRÁ
-              ENTRE LA VOTACIÓN DEL PÚBLICO ASISTENTE Y UN JURADO COMPUESTO POR
-              MÚSICOS Y ESPECIALISTAS MUSICALES DE PRIMER NIVEL
+              <span class="text-xl font-bold">FASE 3</span>
+              <span style="color: #daae51" class="font-bold">FASE FINAL.</span>
+              LOS FINALISTAS DE LA FASE 2
+              <span style="color: #daae51" class="font-bold"
+                >TOCARÁN EN DIRECTO</span
+              >
+              Y EL GANADORSE DECIDIRÁ ENTRE LA VOTACIÓN DEL PÚBLICO ASISTENTE Y
+              UN JURADO COMPUESTO POR MÚSICOS Y ESPECIALISTAS MUSICALES DE
+              PRIMER NIVEL
             </p>
             <p class="text-gray-600 mt-2">
               <a href="./assets/Concurso_de_bandas_2023.pdf" target="_blank"
@@ -350,6 +370,27 @@
             class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
           ></div>
         </div>
+        <div
+          class="relative h-0 overflow-hidden max-w-full w-full"
+          style="padding-bottom: 56.25%"
+        >
+          <div class="flex flex-col items-center w-1/3 mx-auto">
+            <iframe
+              src="https://www.youtube.com/embed/VpeCbZ4oqZU?controls=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              class="absolute top-0 left-0 w-full h-full"
+            ></iframe>
+          </div>
+        </div>
+        <div class="w-full mb-4">
+          <div
+            class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
+          ></div>
+        </div>
+
         <div
           class="w-full md:w-2/4 p-6 flex flex-col flex-grow flex-shrink bg-[url('./assets/images/fondo_3.jpg')] bg-fixed bg-cover fondo_1"
         >
@@ -994,7 +1035,7 @@
           <a href="mailto:vacceorock@gmail.com" class="text-3xl text-blue-300"
             >vacceorock@gmail.com</a
           >
-          y te indicaremos los distintos modelos.
+          y te indicaremos los distintos modelos y ventajas.
         </h2>
       </div>
     </section>
