@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>VACCEO ROCK</title>
+    <script src="./carousel.js"></script>
+
     <meta
       name="description"
-      content="FESTIVAL VACCEO ROCK SAN MIGUEL DEL PINO VALLADOLID"
+      content="ASOCIACION CULTURAL VACCEO ROCK SAN MIGUEL DEL PINO VALLADOLID"
     />
     <meta
       name="keywords"
@@ -16,6 +18,7 @@
     <meta name="author" content="Diego Vazquez" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
       @import url("./fonts/Bahnschrift.TTF");
       @import url("./fonts/TrashHand.TTF");
@@ -61,7 +64,6 @@
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
       rel="stylesheet"
     />
-    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
     <style>
       .gradient {
         background: linear-gradient(90deg, #daae51 0%, #000000 100%);
@@ -71,6 +73,19 @@
       }
     </style>
   </head>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-CCJ3QKSER1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-CCJ3QKSER1");
+  </script>
   <body
     class="leading-normal tracking-normal text-white gradient font-bahnschrift"
   >
@@ -233,7 +248,7 @@
         </g>
       </svg>
     </div>
-    <section class="bg-white border-b py-8 bg-black">
+    <div class="bg-black border-b py-8 bg-black">
       <div class="container max-w-5xl mx-auto m-8" id="eventos">
         <h2
           class="w-full my-2 text-5xl font-bold leading-tight text-center text-amarillo_vacceo font-trashHand"
@@ -254,8 +269,8 @@
               Festival 2023
             </h3>
             <p class="text-gray-600 mb-2">
-              Festival Rock que se celebrará en la plaza mayor de San Miguel del
-              Pino el día <br />
+              Festival Rock que se celebró en San Miguel del Pino el día
+              <br />
               <span class="text-2xl font-bold text-gray-400">
                 17 de junio de 2023</span
               >
@@ -264,16 +279,224 @@
               class="bg-red-500 text-white text-xl font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-red-600 dark:text-white"
               >GRATUITO</span
             >
-            <p class="text-gray-600 mt-2">
-              <span class="text-xl font-bold">BANDAS 2023:</span> Pendiente de
-              confirmación. Estad atentos a las rrss los próximos días!
-            </p>
           </div>
-          <div class="w-full sm:w-1/2 p-2">
-            <img src="./assets/images/grupos/banner_ondeando.gif" alt="" />
+          <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
+            <div class="-m-1 flex flex-wrap md:-m-2">
+              <div class="flex w-1/2 flex-wrap">
+                <div class="w-1/2 p-1 md:p-2">
+                  <img
+                    alt="gallery"
+                    class="block h-full w-full rounded-lg object-scale-down object-center"
+                    src="./assets/images/grupos2023/anuncio delalma.jpg"
+                  />
+                </div>
+                <div class="w-1/2 p-1 md:p-2">
+                  <img
+                    alt="gallery"
+                    class="block h-full w-full rounded-lg object-scale-down object-center"
+                    src="./assets/images/grupos2023/anuncio zenobia.jpg"
+                  />
+                </div>
+                <div class="w-full p-1 md:p-2">
+                  <img
+                    alt="gallery"
+                    class="block h-full w-full rounded-lg object-scale-down object-center"
+                    src="./assets/images/grupos2023/anuncio saratoga.jpg"
+                  />
+                </div>
+              </div>
+              <div class="flex w-1/2 flex-wrap">
+                <div class="w-full p-1 md:p-2">
+                  <img
+                    alt="gallery"
+                    class="block h-full w-full rounded-lg object-scale-down object-center"
+                    src="./assets/images/cartel.jpg"
+                  />
+                </div>
+                <div class="w-1/2 p-1 md:p-2">
+                  <img
+                    alt="gallery"
+                    class="block h-full w-full rounded-lg object-scale-down object-center"
+                    src="./assets/images/grupos2023/anuncio xeria.jpg"
+                  />
+                </div>
+
+                <div class="w-1/2 p-1 md:p-2">
+                  <img
+                    alt="gallery"
+                    class="block h-full w-full rounded-lg object-scale-down object-center"
+                    src="./assets/images/grupos2023/logo closing the earth.jpg"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
+            <hr
+              class="my-2 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+            />
+            <h3
+              class="text-3xl font-bold leading-none mb-3 text-amarillo_vacceo font-trashHand"
+            >
+              Festival 2023 - FOTOS
+            </h3>
+            <div
+              class="flex items-center justify-center py-4 md:py-8 flex-wrap"
+            >
+              <button
+                type="button"
+                id="btn-todos"
+                class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800"
+              >
+                Todos
+              </button>
+              <button
+                type="button"
+                id="btn-closing"
+                class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800"
+              >
+                Closing The Earth
+              </button>
+              <button
+                type="button"
+                id="btn-xeria"
+                class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800"
+              >
+                Xeria
+              </button>
+              <button
+                type="button"
+                id="btn-zenobia"
+                class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800"
+              >
+                Zenobia
+              </button>
+              <button
+                type="button"
+                id="btn-delalma"
+                class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800"
+              >
+                DelAlma
+              </button>
+              <button
+                type="button"
+                id="btn-saratoga"
+                class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800"
+              >
+                Saratoga
+              </button>
+            </div>
+
+            <div role="status" id="loader" style="display: none">
+              <svg
+                aria-hidden="true"
+                class="w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+                viewBox="0 0 100 101"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                  fill="currentFill"
+                />
+              </svg>
+              <span class="sr-only">Loading...</span>
+            </div>
+
+            <div
+              class="grid grid-cols-2 md:grid-cols-3 gap-4"
+              id="image-grid"
+            ></div>
+
+            <script>
+              // Obtener referencia a los botones y al contenedor de las imágenes
+              const btnTodos = document.getElementById("btn-todos");
+              const btnClosing = document.getElementById("btn-closing");
+              const btnXeria = document.getElementById("btn-xeria");
+              const btnZenobia = document.getElementById("btn-zenobia");
+              const btnDelAlma = document.getElementById("btn-delalma");
+              const btnSaratoga = document.getElementById("btn-saratoga");
+              const imageGrid = document.getElementById("image-grid");
+              const loader = document.getElementById("loader");
+
+              // Añadir eventos de clic a los botones
+              btnTodos.addEventListener("click", mostrarTodos);
+              btnClosing.addEventListener("click", mostrarClosing);
+              btnXeria.addEventListener("click", mostrarXeria);
+              btnZenobia.addEventListener("click", mostrarZenobia);
+              btnDelAlma.addEventListener("click", mostrarDelAlma);
+              btnSaratoga.addEventListener("click", mostrarSaratoga);
+
+              // Funciones para mostrar las imágenes correspondientes a cada botón
+              function mostrarTodos() {
+                mostrarImagenes();
+                loader.style.display = "none";
+              }
+              function mostrarSaratoga() {
+                ocultarImagenes();
+                mostrarImagenesConClase("saratoga");
+                loader.style.display = "none";
+              }
+              function mostrarClosing() {
+                ocultarImagenes();
+                mostrarImagenesConClase("closing");
+                loader.style.display = "none";
+              }
+
+              function mostrarXeria() {
+                ocultarImagenes();
+                mostrarImagenesConClase("xeria");
+                loader.style.display = "none";
+              }
+
+              function mostrarZenobia() {
+                ocultarImagenes();
+                mostrarImagenesConClase("zenobia");
+                loader.style.display = "none";
+              }
+
+              function mostrarDelAlma() {
+                ocultarImagenes();
+                mostrarImagenesConClase("delalma");
+                loader.style.display = "none";
+              }
+
+              // Funciones de utilidad
+              function mostrarImagenes() {
+                const imagenes = imageGrid.querySelectorAll("div");
+                for (const imagen of imagenes) {
+                  imagen.style.display = "block";
+                }
+                loader.style.display = "none";
+              }
+
+              function ocultarImagenes() {
+                const imagenes = imageGrid.querySelectorAll("div");
+                for (const imagen of imagenes) {
+                  imagen.style.display = "none";
+                }
+                loader.style.display = "block";
+              }
+
+              function mostrarImagenesConClase(clase) {
+                const imagenes = imageGrid.querySelectorAll(`div.${clase}`);
+                for (const imagen of imagenes) {
+                  imagen.style.display = "block";
+                }
+              }
+            </script>
+          </div>
+          <hr
+            class="my-2 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+          />
         </div>
-        <hr />
+        <hr
+          class="my-2 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
         <div
           class="flex flex-wrap flex-col-reverse sm:flex-row text-center justify-center"
         >
@@ -307,6 +530,10 @@
             >
               Concurso bandas 2023
             </h3>
+            <span
+              class="bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300"
+              >CERRADO</span
+            >
             <p class="text-gray-600 mb-2"></p>
 
             <p class="text-gray-600 mt-2">
@@ -314,14 +541,8 @@
               <span style="color: #daae51" class="font-bold"
                 >ENVÍO DE MAQUETA</span
               >
-              O EP(mínimo 3 canciones) A:
+              O EP(mínimo 3 canciones):
               <br />
-              <a
-                href="mailto:concursobandasvr2023@gmail.com"
-                target="_blank"
-                class="text-white sm:text-2xl"
-                >concursobandasvr2023@gmail.com</a
-              >
             </p>
             <p class="text-gray-600 mt-2">
               <span class="text-xl font-bold">FASE 2:</span>
@@ -354,699 +575,381 @@
           </div>
 
           <div class="w-full sm:w-1/2 p-2">
-            <!--<img
-              src="./assets/images/concursobandas6.jpg"
+            <img
+              src="./assets/images/concursobandas_sin_patro.jpg"
               alt=""
               class="sm:hover:scale-150 hover:justify-center cursor-pointer"
-            />-->
+            />
+          </div>
+        </div>
+        <hr />
+        <div
+          class="flex flex-wrap flex-col-reverse sm:flex-row text-center justify-center"
+        >
+          <div class="w-full sm:w-1/2 p-2 mt-2">
+            <img src="./assets/images/fina_concurso.jpg" alt="" />
+          </div>
+          <div class="w-full sm:w-1/2 p-2 mt-6">
+            <div class="align-middle">
+              <h3
+                class="text-3xl text-gray-400 font-bold leading-none mb-3 font-trashHand"
+              >
+                FINAL CONCURSO DE BANDAS
+              </h3>
+              <p class="text-gray-600 mb-2">
+                <span style="color: #daae51" class="font-bold">13 de mayo </span
+                >En la Plaza Mayor de San Miguel del Pino
+              </p>
+              <p class="text-gray-400 mb-2 text-xl font-bold">
+                Ven a disfrutar de los 5 finalistas, asi como de The Lizards
+                para poner el broche final al I Concurso de Bandas VacceoRock.
+                Tendréis la opción de votar a los grupos que más os gusten y el
+                ganador tocará el 17 de Junio en el Festival junto a Saratoga,
+                DelAlma, Zenobia y Xeria
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="bg-white border-b py-8 bg-black" id="festival2022">
-      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-        <h2
-          class="w-full my-2 text-5xl font-bold leading-tight text-center text-amarillo_vacceo font-trashHand"
-          style="color: #daae51"
-        >
-          Festival 2022
-        </h2>
-        <div class="w-full mb-4">
+      <div class="bg-white border-b py-8 bg-black" id="festival2022">
+        <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+          <h2
+            class="w-full my-2 text-5xl font-bold leading-tight text-center text-amarillo_vacceo font-trashHand"
+            style="color: #daae51"
+          >
+            Festival 2022
+          </h2>
+          <div class="w-full mb-4">
+            <div
+              class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
+            ></div>
+          </div>
           <div
-            class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
-          ></div>
-        </div>
-        <div
-          class="relative h-0 overflow-hidden max-w-full w-full"
-          style="padding-bottom: 56.25%"
-        >
-          <div class="flex flex-col items-center w-1/3 mx-auto">
-            <iframe
-              src="https://www.youtube.com/embed/VpeCbZ4oqZU?controls=0"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              class="absolute top-0 left-0 w-full h-full"
-            ></iframe>
+            class="relative h-0 overflow-hidden max-w-full w-full"
+            style="padding-bottom: 56.25%"
+          >
+            <div class="flex flex-col items-center w-1/3 mx-auto">
+              <iframe
+                src="https://www.youtube.com/embed/VpeCbZ4oqZU?controls=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                class="absolute top-0 left-0 w-full h-full"
+              ></iframe>
+            </div>
           </div>
-        </div>
-        <div class="w-full mb-4">
+          <div class="w-full mb-4">
+            <div
+              class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
+            ></div>
+          </div>
+
           <div
-            class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
-          ></div>
-        </div>
+            class="w-full md:w-2/4 p-6 flex flex-col flex-grow flex-shrink bg-[url('./assets/images/fondo_3.jpg')] bg-fixed bg-cover fondo_1"
+          >
+            <div class="flex-1 rounded-t rounded-b-none overflow-hidden shadow">
+              <a
+                href="http://www.blazethetrailband.com/"
+                class="flex flex-wrap no-underline hover:no-underline"
+                target="_blank"
+              >
+                <p
+                  class="w-full text-white text-2xl md:text-4xl px-6 text-center font-bold"
+                >
+                  BLAZE THE TRAIL
+                </p>
+                <img
+                  src="./assets/images/grupos/btt.jpg"
+                  alt=""
+                  class="w-full justify-center mt-2"
+                />
+                <p
+                  class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 bg-gray-800/50 p-2"
+                >
+                  HARDCORE METAL DESDE VALLADOLID . DESDE SUS ORÍGENES EN 2016 ,
+                  BLAZE THE TRAIL HA SIDO UNA BANDA COMPROMETIDA AL MÁXIMO CON
+                  LA DIFUSIÓN DE LOS VALORES HARDCORE EN DIRECTO, LANZÁNDOSE
+                  DESDE EL MINUTO 1 A COMPARTIR ESCENARIO CON BANDAS IMPORTANTES
+                  DEL PANORAMA ESTATAL COMO CRISIX, AGAINST THE WAVES, DAWN OF
+                  THE MAYA O RIOT PROPAGANDA, ENTRE OTROS.
+                </p>
+              </a>
+            </div>
+          </div>
+          <div
+            class="w-full md:w-2/4 p-6 flex flex-col flex-grow flex-shrink bg-[url('./assets/images/fondo_3.jpg')] bg-fixed bg-cover fondo_1"
+          >
+            <div class="flex-1 rounded-t rounded-b-none overflow-hidden shadow">
+              <a
+                href="https://www.mandragoranegra.com/"
+                class="flex flex-wrap no-underline hover:no-underline"
+                target="_blank"
+              >
+                <p
+                  class="w-full text-white text-2xl md:text-4xl px-6 text-center font-bold uppercase"
+                >
+                  MANDRÁGORA NEGRA
+                </p>
+                <img
+                  src="./assets/images/grupos/mandragora.jpg"
+                  alt=""
+                  class="w-full justify-center mt-2"
+                />
+                <p
+                  class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 uppercase bg-gray-800/50 p-2"
+                >
+                  MANDRAGORA NEGRA se encuentra inmersa ya en la promoción de su
+                  nuevo álbum “SIMBOLO DE LIBERTAD “, editado a través del sello
+                  HEAVEN MUSIK. Trabajo con el que están muy ilusionados ya que
+                  ha supuesto un enorme esfuerzo poder realizarlo. Desde la
+                  agencia de Promoción & Management HEAVEN MUSIK, preparan una
+                  gira que les llevara a recorrer diversas ciudades de la
+                  península en la cual presentaran su nuevo trabajo
+                  discográfico.
+                </p>
+              </a>
+            </div>
+          </div>
 
-        <div
-          class="w-full md:w-2/4 p-6 flex flex-col flex-grow flex-shrink bg-[url('./assets/images/fondo_3.jpg')] bg-fixed bg-cover fondo_1"
-        >
-          <div class="flex-1 rounded-t rounded-b-none overflow-hidden shadow">
-            <a
-              href="http://www.blazethetrailband.com/"
-              class="flex flex-wrap no-underline hover:no-underline"
-              target="_blank"
-            >
-              <p
-                class="w-full text-white text-2xl md:text-4xl px-6 text-center font-bold"
+          <div
+            class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink bg-[url('./assets/images/fondo_3.jpg')] bg-fixed bg-cover fondo_1"
+          >
+            <div class="flex-1 rounded-t rounded-b-none overflow-hidden shadow">
+              <a
+                href="https://es-es.facebook.com/HiD3A/"
+                class="flex flex-wrap no-underline hover:no-underline"
+                target="_blank"
               >
-                BLAZE THE TRAIL
-              </p>
-              <img
-                src="./assets/images/grupos/btt.jpg"
-                alt=""
-                class="w-full justify-center mt-2"
-              />
-              <p
-                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 bg-gray-800/50 p-2"
-              >
-                HARDCORE METAL DESDE VALLADOLID . DESDE SUS ORÍGENES EN 2016 ,
-                BLAZE THE TRAIL HA SIDO UNA BANDA COMPROMETIDA AL MÁXIMO CON LA
-                DIFUSIÓN DE LOS VALORES HARDCORE EN DIRECTO, LANZÁNDOSE DESDE EL
-                MINUTO 1 A COMPARTIR ESCENARIO CON BANDAS IMPORTANTES DEL
-                PANORAMA ESTATAL COMO CRISIX, AGAINST THE WAVES, DAWN OF THE
-                MAYA O RIOT PROPAGANDA, ENTRE OTROS.
-              </p>
-            </a>
+                <p
+                  class="w-full text-white text-xl md:text-3xl px-6 text-center font-bold"
+                >
+                  HIJOS DEL TERCER ACORDE
+                </p>
+                <img
+                  src="./assets/images/grupos/tercerAcorde.jpg"
+                  alt=""
+                  class=""
+                />
+                <p
+                  class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 uppercase bg-gray-800/50 p-2"
+                >
+                  Hijos del Tercer Acorde (HiD3A) es una banda de folk-rock con
+                  temas propios en castellano que nació en Valladolid en el año
+                  2015. Sus temas hibridan el sabor del rock&roll con las
+                  melodías y los instrumentos de la música tradicional
+                  irlandesa, castellana, galaica y americana; ello, unido a una
+                  puesta en escena ficcionada e inspirada en la ciencia ficción
+                  steampunk, convierten a esta tripulación de balas perdidas en
+                  una apuesta segura.
+                </p>
+              </a>
+            </div>
           </div>
-        </div>
-        <div
-          class="w-full md:w-2/4 p-6 flex flex-col flex-grow flex-shrink bg-[url('./assets/images/fondo_3.jpg')] bg-fixed bg-cover fondo_1"
-        >
-          <div class="flex-1 rounded-t rounded-b-none overflow-hidden shadow">
-            <a
-              href="https://www.mandragoranegra.com/"
-              class="flex flex-wrap no-underline hover:no-underline"
-              target="_blank"
-            >
-              <p
-                class="w-full text-white text-2xl md:text-4xl px-6 text-center font-bold uppercase"
+          <div
+            class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink bg-[url('./assets/images/fondo_3.jpg')] bg-fixed bg-cover fondo_1"
+          >
+            <div class="flex-1 rounded-t rounded-b-none overflow-hidden shadow">
+              <a
+                href="https://es-es.facebook.com/paraiso.terrenal.79/"
+                class="flex flex-wrap no-underline hover:no-underline"
+                target="_blank"
               >
-                MANDRÁGORA NEGRA
-              </p>
-              <img
-                src="./assets/images/grupos/mandragora.jpg"
-                alt=""
-                class="w-full justify-center mt-2"
-              />
-              <p
-                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 uppercase bg-gray-800/50 p-2"
-              >
-                MANDRAGORA NEGRA se encuentra inmersa ya en la promoción de su
-                nuevo álbum “SIMBOLO DE LIBERTAD “, editado a través del sello
-                HEAVEN MUSIK. Trabajo con el que están muy ilusionados ya que ha
-                supuesto un enorme esfuerzo poder realizarlo. Desde la agencia
-                de Promoción & Management HEAVEN MUSIK, preparan una gira que
-                les llevara a recorrer diversas ciudades de la península en la
-                cual presentaran su nuevo trabajo discográfico.
-              </p>
-            </a>
+                <p
+                  class="w-full text-white text-xl md:text-3xl px-6 text-center font-bold"
+                >
+                  PARAISO TERRENAL
+                </p>
+                <img src="./assets/images/grupos/paraiso.jpg" alt="" />
+                <p
+                  class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 uppercase bg-gray-800/50 p-2"
+                >
+                  Banda de Heavy Metal/Hard Rock nacida en Valladolid en el año
+                  2012, con la idea principal de “Suko Sánchez” y “David Vita”.
+                  Su sonido, está claramente influenciado por una mezcla de
+                  grupos internacionales, como puedan ser “Dee Snider, Accept o
+                  Skid Row” y sobre todo nacionales, como “Ángeles del Infierno,
+                  Saratoga o Dunedain”.
+                </p>
+              </a>
+            </div>
           </div>
-        </div>
-
-        <div
-          class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink bg-[url('./assets/images/fondo_3.jpg')] bg-fixed bg-cover fondo_1"
-        >
-          <div class="flex-1 rounded-t rounded-b-none overflow-hidden shadow">
-            <a
-              href="https://es-es.facebook.com/HiD3A/"
-              class="flex flex-wrap no-underline hover:no-underline"
-              target="_blank"
-            >
-              <p
-                class="w-full text-white text-xl md:text-3xl px-6 text-center font-bold"
+          <div
+            class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink bg-[url('./assets/images/fondo_3.jpg')] bg-fixed bg-cover"
+          >
+            <div class="flex-1 rounded-t rounded-b-none overflow-hidden shadow">
+              <a
+                href="https://www.facebook.com/WakeUpYourHopes/"
+                class="flex flex-wrap no-underline hover:no-underline"
+                target="_blank"
               >
-                HIJOS DEL TERCER ACORDE
-              </p>
-              <img
-                src="./assets/images/grupos/tercerAcorde.jpg"
-                alt=""
-                class=""
-              />
-              <p
-                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 uppercase bg-gray-800/50 p-2"
-              >
-                Hijos del Tercer Acorde (HiD3A) es una banda de folk-rock con
-                temas propios en castellano que nació en Valladolid en el año
-                2015. Sus temas hibridan el sabor del rock&roll con las melodías
-                y los instrumentos de la música tradicional irlandesa,
-                castellana, galaica y americana; ello, unido a una puesta en
-                escena ficcionada e inspirada en la ciencia ficción steampunk,
-                convierten a esta tripulación de balas perdidas en una apuesta
-                segura.
-              </p>
-            </a>
+                <p
+                  class="w-full text-white text-xl md:text-3xl px-6 text-center font-bold"
+                >
+                  WAKE UP YOUR HOPES
+                </p>
+                <img src="./assets/images/grupos/wakeUp.jpg" alt="" />
+                <p
+                  class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 uppercase bg-gray-800/50 p-2"
+                >
+                  Wake Up Your Hopes es una banda de metalcore vallisoletana que
+                  nace de la ilusión de 4 chicos en el año 2016. Tras varios
+                  cambios en su formación, numerosos conciertos, videoclips, un
+                  E.P. y un parón que ha durado más de lo deseado, actualmente
+                  la banda se propone volver al escenario y sacar a la luz
+                  nuevas canciones.
+                </p>
+              </a>
+            </div>
           </div>
-        </div>
-        <div
-          class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink bg-[url('./assets/images/fondo_3.jpg')] bg-fixed bg-cover fondo_1"
-        >
-          <div class="flex-1 rounded-t rounded-b-none overflow-hidden shadow">
-            <a
-              href="https://es-es.facebook.com/paraiso.terrenal.79/"
-              class="flex flex-wrap no-underline hover:no-underline"
-              target="_blank"
-            >
-              <p
-                class="w-full text-white text-xl md:text-3xl px-6 text-center font-bold"
+          <div
+            class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink bg-[url('./assets/images/fondo_3.jpg')] bg-fixed bg-cover"
+          >
+            <div class="flex-1 rounded-t rounded-b-none overflow-hidden shadow">
+              <a
+                href="https://es-es.facebook.com/people/Los-Osos-de-Velilla/100076067071912/"
+                class="flex flex-wrap no-underline hover:no-underline"
+                target="_blank"
               >
-                PARAISO TERRENAL
-              </p>
-              <img src="./assets/images/grupos/paraiso.jpg" alt="" />
-              <p
-                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 uppercase bg-gray-800/50 p-2"
-              >
-                Banda de Heavy Metal/Hard Rock nacida en Valladolid en el año
-                2012, con la idea principal de “Suko Sánchez” y “David Vita”. Su
-                sonido, está claramente influenciado por una mezcla de grupos
-                internacionales, como puedan ser “Dee Snider, Accept o Skid Row”
-                y sobre todo nacionales, como “Ángeles del Infierno, Saratoga o
-                Dunedain”.
-              </p>
-            </a>
+                <p
+                  class="w-full text-white text-xl md:text-3xl px-6 text-center font-bold"
+                >
+                  OSO DE VELILLA
+                </p>
+                <img src="./assets/images/grupos/osos.jpg" alt="" />
+                <p
+                  class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 uppercase bg-gray-800/50 p-2"
+                >
+                  Los Osos de Velilla es una banda creada en el año 2015, en el
+                  Oeste de Zamora, más concretamente en Muelas de los
+                  Caballeros, para el divertimento del público y de los propios
+                  Osos. Tenemos temas propios y otras adaptaciones de temas
+                  robados y tuneados impúnemente, de forma que podamos hacerles
+                  nuestros, con letras sobre la zona de Sanabria-Carballeda que
+                  adaptamos sin ningún dolor a cualquier otro lugar que requiera
+                  nuestra presencia.
+                </p>
+              </a>
+            </div>
           </div>
-        </div>
-        <div
-          class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink bg-[url('./assets/images/fondo_3.jpg')] bg-fixed bg-cover"
-        >
-          <div class="flex-1 rounded-t rounded-b-none overflow-hidden shadow">
-            <a
-              href="https://www.facebook.com/WakeUpYourHopes/"
-              class="flex flex-wrap no-underline hover:no-underline"
-              target="_blank"
-            >
-              <p
-                class="w-full text-white text-xl md:text-3xl px-6 text-center font-bold"
+          <div
+            class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink bg-[url('./assets/images/fondo_3.jpg')] bg-fixed bg-cover"
+          >
+            <div class="flex-1 rounded-t rounded-b-none overflow-hidden shadow">
+              <a
+                href="#"
+                class="flex flex-wrap no-underline hover:no-underline"
+                target="_blank"
               >
-                WAKE UP YOUR HOPES
-              </p>
-              <img src="./assets/images/grupos/wakeUp.jpg" alt="" />
-              <p
-                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 uppercase bg-gray-800/50 p-2"
-              >
-                Wake Up Your Hopes es una banda de metalcore vallisoletana que
-                nace de la ilusión de 4 chicos en el año 2016. Tras varios
-                cambios en su formación, numerosos conciertos, videoclips, un
-                E.P. y un parón que ha durado más de lo deseado, actualmente la
-                banda se propone volver al escenario y sacar a la luz nuevas
-                canciones.
-              </p>
-            </a>
+                <p
+                  class="w-full text-white text-xl md:text-3xl px-6 text-center font-bold"
+                >
+                  ATAIRAOS
+                </p>
+                <img src="./assets/images/grupos/atairaos.jpg" alt="" />
+                <p
+                  class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 uppercase bg-gray-800/50 p-2"
+                >
+                  ATAIRAOS (atravesados o en diagonal, en el habla de la Sierra
+                  de Francia de Salamanca) es una experiencia única en la música
+                  de raíz en España: el diálogo de tú a tú entre la tradición
+                  más pura y su reelaboración contemporánea. El trabajo de
+                  Atairaos se centra en la música instrumental de la gaita
+                  charra y el tamboril de Salamanca, de la mano del maestro
+                  Agustín García (El Cabaco, 1963), un archivo viviente de
+                  melodías y estilos aprendidos de muchos tamborileros que le
+                  precedieron.
+                </p>
+              </a>
+            </div>
           </div>
-        </div>
-        <div
-          class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink bg-[url('./assets/images/fondo_3.jpg')] bg-fixed bg-cover"
-        >
-          <div class="flex-1 rounded-t rounded-b-none overflow-hidden shadow">
-            <a
-              href="https://es-es.facebook.com/people/Los-Osos-de-Velilla/100076067071912/"
-              class="flex flex-wrap no-underline hover:no-underline"
-              target="_blank"
-            >
-              <p
-                class="w-full text-white text-xl md:text-3xl px-6 text-center font-bold"
+          <div
+            class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink bg-[url('./assets/images/fondo_3.jpg')] bg-fixed bg-cover"
+          >
+            <div class="flex-1 rounded-t rounded-b-none overflow-hidden shadow">
+              <a
+                href="https://es-es.facebook.com/hijosdeoveronoficial/"
+                class="flex flex-wrap no-underline hover:no-underline"
+                target="_blank"
               >
-                OSO DE VELILLA
-              </p>
-              <img src="./assets/images/grupos/osos.jpg" alt="" />
-              <p
-                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 uppercase bg-gray-800/50 p-2"
-              >
-                Los Osos de Velilla es una banda creada en el año 2015, en el
-                Oeste de Zamora, más concretamente en Muelas de los Caballeros,
-                para el divertimento del público y de los propios Osos. Tenemos
-                temas propios y otras adaptaciones de temas robados y tuneados
-                impúnemente, de forma que podamos hacerles nuestros, con letras
-                sobre la zona de Sanabria-Carballeda que adaptamos sin ningún
-                dolor a cualquier otro lugar que requiera nuestra presencia.
-              </p>
-            </a>
-          </div>
-        </div>
-        <div
-          class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink bg-[url('./assets/images/fondo_3.jpg')] bg-fixed bg-cover"
-        >
-          <div class="flex-1 rounded-t rounded-b-none overflow-hidden shadow">
-            <a
-              href="#"
-              class="flex flex-wrap no-underline hover:no-underline"
-              target="_blank"
-            >
-              <p
-                class="w-full text-white text-xl md:text-3xl px-6 text-center font-bold"
-              >
-                ATAIRAOS
-              </p>
-              <img src="./assets/images/grupos/atairaos.jpg" alt="" />
-              <p
-                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 uppercase bg-gray-800/50 p-2"
-              >
-                ATAIRAOS (atravesados o en diagonal, en el habla de la Sierra de
-                Francia de Salamanca) es una experiencia única en la música de
-                raíz en España: el diálogo de tú a tú entre la tradición más
-                pura y su reelaboración contemporánea. El trabajo de Atairaos se
-                centra en la música instrumental de la gaita charra y el
-                tamboril de Salamanca, de la mano del maestro Agustín García (El
-                Cabaco, 1963), un archivo viviente de melodías y estilos
-                aprendidos de muchos tamborileros que le precedieron.
-              </p>
-            </a>
-          </div>
-        </div>
-        <div
-          class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink bg-[url('./assets/images/fondo_3.jpg')] bg-fixed bg-cover"
-        >
-          <div class="flex-1 rounded-t rounded-b-none overflow-hidden shadow">
-            <a
-              href="https://es-es.facebook.com/hijosdeoveronoficial/"
-              class="flex flex-wrap no-underline hover:no-underline"
-              target="_blank"
-            >
-              <p
-                class="w-full text-white text-xl md:text-3xl px-6 text-center font-bold"
-              >
-                HIJOS DE OVERON
-              </p>
-              <img src="./assets/images/grupos/HijosdeOveron.jpg" alt="" />
-              <p
-                class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 uppercase bg-gray-800/50 p-2"
-              >
-                Hijos de Overón se forma en 2007 de la mano de Raúl y Joni, y se
-                unen al proyecto Rubén Cuellar (el mono) y Daniel Pérez. En 2008
-                debutan en la sala Joaquín Sabina de Móstoles (Madrid) y
-                empiezan a dar conciertos por la zona de Valladolid y Segovia.
-                Deciden incluir en la formación a Miguel Fraile como segundo
-                guitarra. A finales de 2010 se marcha Miguel. En 2014 graban su
-                primer disco “Prisionero De Agujas” que sale a la luz en marzo
-                de 2014, luego vendrían "Camino de piedras" y Salvaje. En la
-                actualidad están preparando nuevo disco.
-              </p>
-            </a>
+                <p
+                  class="w-full text-white text-xl md:text-3xl px-6 text-center font-bold"
+                >
+                  HIJOS DE OVERON
+                </p>
+                <img src="./assets/images/grupos/HijosdeOveron.jpg" alt="" />
+                <p
+                  class="w-full text-white text-xs md:text-sm px-6 text-center justify-center mt-2 uppercase bg-gray-800/50 p-2"
+                >
+                  Hijos de Overón se forma en 2007 de la mano de Raúl y Joni, y
+                  se unen al proyecto Rubén Cuellar (el mono) y Daniel Pérez. En
+                  2008 debutan en la sala Joaquín Sabina de Móstoles (Madrid) y
+                  empiezan a dar conciertos por la zona de Valladolid y Segovia.
+                  Deciden incluir en la formación a Miguel Fraile como segundo
+                  guitarra. A finales de 2010 se marcha Miguel. En 2014 graban
+                  su primer disco “Prisionero De Agujas” que sale a la luz en
+                  marzo de 2014, luego vendrían "Camino de piedras" y Salvaje.
+                  En la actualidad están preparando nuevo disco.
+                </p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!--<section class="bg-black py-8 bg-black">
-      <div
-        class="container mx-auto px-2 pt-4 pb-12 bg-[url('./assets/images/fondo_4.jpg')] bg-fixed bg-cover"
+
+      <svg
+        class="wave-top"
+        viewBox="0 0 1439 147"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
       >
-        <h2
-          class="my-2 text-5xl font-bold text-center text-amarillo_vacceo bg-gray-800/70"
-        >
-          Patrocinios Asociación
-        </h2>
-        <h3
-          class="w-full my-2 font-bold text-2xl leading-tight text-center text-amarillo_vacceo bg-gray-800/70"
-        >
-          Consulta las ventajas
-        </h3>
-        <div class="w-full mb-4">
-          <div
-            class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
-          ></div>
-        </div>
-        <div
-          class="flex flex-col sm:flex-row justify-center pt-4 my-12 sm:my-4"
-        >
-          <div
-            class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4"
-          >
-            <div
-              class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow"
-            >
-              <div class="p-8 text-3xl text-center border-b-4">Bronce</div>
-              <ul class="w-full text-center text-sm p-2">
-                <li class="border-b py-4">
-                  Logotipo en la web y en el cartel del festival en la zona de
-                  patrocinadores básicos.
-                </li>
-                <li class="border-b py-4">
-                  Mención en las redes sociales y en las notas de prensa.
-                </li>
-                <li class="border-b py-4">
-                  Mención en el vídeo resumen del festival
-                </li>
-                <li class="border-b py-4">Camiseta de Vacceo Rock</li>
-              </ul>
-            </div>
-            <div
-              class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
-            >
-              <div class="flex items-center justify-center">
-                <button
-                  class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-                >
-                  <a href="mailto:vacceorock@gmail.com"
-                    >Contacta con nosotros</a
-                  >
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg mt-4 sm:-mt-6 shadow-lg z-10 bg-[url('./assets/images/fondo_3.jpg')] bg-hero bg-no-repeat bg-cover bg-center bg-fixed"
-          >
-            <div
-              class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
-            >
-              <div
-                class="w-full p-8 text-3xl font-bold text-center text-gray-700"
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+            <g class="wave" fill="#000000">
+              <path
+                d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
+              ></path>
+            </g>
+            <g transform="translate(1.000000, 15.000000)" fill="#000000">
+              <g
+                transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) "
               >
-                Oro
-              </div>
-              <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
-              <ul
-                class="w-full text-center text-base font-bold text-gray-600 p-2"
-              >
-                <li class="border-b py-4">
-                  Logotipo en la web y en el cartel del festival en la zona de
-                  patrocinadores estándar.
-                </li>
-                <li class="border-b py-4">
-                  Mención en las redes sociales y en las notas de prensa.
-                </li>
-                <li class="border-b py-4">
-                  Logotipo en el vídeo resumen del festival
-                </li>
-                <li class="border-b py-4">4 camisetas de Vacceo Rock</li>
-                <li class="border-b py-4">Logotipo en el Photocall</li>
-                <li class="border-b py-4">
-                  Logotipo en los vasos reutilizables del festival.
-                </li>
-              </ul>
-            </div>
-            <div
-              class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
-            >
-              <div class="flex items-center justify-center">
-                <button
-                  class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-                >
-                  <a href="mailto:vacceorock@gmail.com"
-                    >Contacta con nosotros</a
-                  >
-                </button>
-              </div>
-              <p class="text-gray-600 text-center justify-center">
-                Si quieres saber más sobre el programa de patrocinadores, no
-                dudes en ponerte en contacto con nosotros
-              </p>
-            </div>
-          </div>
-          <div
-            class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4"
-          >
-            <div
-              class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow"
-            >
-              <div class="p-8 text-3xl text-center border-b-4">Plata</div>
-              <ul class="w-full text-center text-sm p-2">
-                <li class="border-b py-4">
-                  Logotipo en la web y en el cartel del festival en la zona de
-                  patrocinadores estándar.
-                </li>
-                <li class="border-b py-4">
-                  Mención en las redes sociales y en las notas de prensa.
-                </li>
-                <li class="border-b py-4">
-                  Logotipo en el vídeo resumen del festival
-                </li>
-                <li class="border-b py-4">2 camisetas de Vacceo Rock</li>
-                <li class="border-b py-4">Logotipo en el Photocall</li>
-              </ul>
-            </div>
-            <div
-              class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
-            >
-              <div class="flex items-center justify-center">
-                <button
-                  class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-                >
-                  <a href="mailto:vacceorock@gmail.com"
-                    >Contacta con nosotros</a
-                  >
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>-->
-    <!-- Change the colour #f8fafc to match the previous section colour -->
-    <svg
-      class="wave-top"
-      viewBox="0 0 1439 147"
-      version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-    >
-      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
-          <g class="wave" fill="#000000">
-            <path
-              d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
-            ></path>
-          </g>
-          <g transform="translate(1.000000, 15.000000)" fill="#000000">
-            <g
-              transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) "
-            >
-              <path
-                d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
-                opacity="0.100000001"
-              ></path>
-              <path
-                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-                opacity="0.100000001"
-              ></path>
-              <path
-                d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
-                opacity="0.200000003"
-              ></path>
+                <path
+                  d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+                  opacity="0.100000001"
+                ></path>
+                <path
+                  d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                  opacity="0.100000001"
+                ></path>
+                <path
+                  d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+                  opacity="0.200000003"
+                ></path>
+              </g>
             </g>
           </g>
         </g>
-      </g>
-    </svg>
-    <section
-      class="container mx-auto text-center py-6 mb-12"
-      id="patrocinadores"
-    >
-      <h2
-        class="w-full my-2 text-5xl font-bold leading-tight text-center font-trashHand"
-      >
-        Patrocinadores 2022
-      </h2>
-      <div class="body-slider">
-        <div class="slider">
-          <div class="slide-track">
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/gaitan.jpg"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/molino.jpg"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/aerodromo.jpg"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/agricola_anton.png"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/alpe2.jpg"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/barLolita.jpg"
-                alt=""
-                class="patrocinios2022 mr-1"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/bodegas-lopez-380x190.jpg"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/cadielsa.jpg"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/casasrurales2.jpg"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/choco.jpg"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/del pozo2.jpg"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/disvetma.jpg"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/duerocar2.jpeg"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/gasoleos.jpg"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/jonatan.jpg"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/lacigueña.png"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/micapricho2.jpg"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/neo.jpg"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/o2_Agro.png"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/pavitor.jpg"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/reparacionesjr2.jpg"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/sapiesa.jpg"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/semillasblanco.jpeg"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="./assets/images/patrocinios2022/valdegalindo.jpg"
-                alt=""
-                class="patrocinios2022 mr-1"
-                style="height: 120px; width: 230px"
-              />
-            </div>
-          </div>
-        </div>
+      </svg>
+      <div class="container mx-auto text-center py-6 mb-12" id="patrocinadores">
         <h2
-          class="shadow-lg w-full my-2 text-3xl font-bold leading-tight text-center font-trashHand p-4"
+          class="w-full my-2 text-5xl font-bold leading-tight text-center font-trashHand"
         >
-          Si quieres ser patrocinador del festival VacceoRock 2023, escríbenos a
-          <a href="mailto:vacceorock@gmail.com" class="text-3xl text-blue-300"
-            >vacceorock@gmail.com</a
-          >
-          y te indicaremos los distintos modelos y ventajas.
+          Patrocinadores 2023
         </h2>
+
+        <div class="w-full p-6 flex flex-col flex-grow flex-shrink">
+          <img
+            src="./assets/images/patrocinios2023/patrocinios2.jpg"
+            alt=""
+            class="patrocinios2023 mr-1"
+          />
+        </div>
       </div>
-    </section>
+    </div>
     <hr />
-    <section class="container mx-auto text-center py-6 mb-12" id="contacto">
+    <div class="container mx-auto text-center py-6 mb-12" id="contacto">
       <h2
         class="w-full my-2 text-5xl font-bold leading-tight text-center text-white font-trashHand"
       >
@@ -1126,7 +1029,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <hr class="my-2 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <footer class="p-2 sm:p-6 w-full text-center justify-center items-center">
       <p class="text-white">
